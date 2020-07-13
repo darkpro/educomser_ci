@@ -57,3 +57,8 @@ $routes->get('/persona/empleado/(:any)/(:num)', 'PersonaController::liquidoPagab
 $routes->get('/persona/listar','PersonaController::listarAction');
 
 $routes->get('/hola/mis/datos', 'HolaController::misdatosAction');
+//Practica 2
+$routes->get('/practica/misdatos', 'Practica2Controller::misdatosAction');
+$routes->get('/practica/tabla/multiplicar/(:num)', 'Practica2Controller::tablamultiplicarAction/$1');
+$routes->get('/practica/matriz/(:num)', 'Practica2Controller::matrizAction/$1');
+$routes->get('/practica/productos', 'Practica2Controller::listardatosproductosAction');
