@@ -62,3 +62,20 @@ $routes->get('/practica/misdatos', 'Practica2Controller::misdatosAction');
 $routes->get('/practica/tabla/multiplicar/(:num)', 'Practica2Controller::tablamultiplicarAction/$1');
 $routes->get('/practica/matriz/(:num)', 'Practica2Controller::matrizAction/$1');
 $routes->get('/practica/productos', 'Practica2Controller::listardatosproductosAction');
+//clase 5
+$routes->get('/calculadora/(:num)/(:num)', 'CalculadoraController::aritmeticaAction/$1/$2');
+$routes->get('/perimetro/(:num)/(:num)', 'CalculadoraController::geometriaAction/$1/$2');
+//
+$routes->get('/users', 'UserController::index');
+$routes->get('/users/save', 'UserController::index');
+$routes->get('/users/update/(:num)', 'UserController::index');
+$routes->get('/users/delete/(:num)', 'UserController::index');
+//USER
+$routes->get('/users/consulta/sql', 'UserController::consultaSqlAction');
+$routes->get('/user/new','UserController::newAction');
+$routes->post('/user/create','UserController::createAction');
+//Tarea3
+$routes->get('/calculadora/aritmetica/(:num)/(:num)', 'CalculadoraController::t3aritmeticaAction/$1/$2');
+$routes->get('/calculadora/rectangulo/(:num)/(:num)', 'CalculadoraController::t3rectanguloAction/$1/$2');
+$routes->get('/calculadora/circulo/(:num)', 'CalculadoraController::t3circuloAction/$1');
+
